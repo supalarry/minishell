@@ -18,6 +18,6 @@ Furthermore, environment metadata is managed via **setenv VAR VALUE** and enviro
 
 ![alt text](https://i.imgur.com/zpFfrzI.png)
 
-This minishell also includes in-builts, like **cd**, **exit**, **echo**. If child process is ran, it can be killed by sending SIGNIT signal by pressing ctrl+c. It also includes **~** and **$** expansions. By writing **cd**, minishell changes directory to home directory and **cd -** changes present directory to previous present directory. **exit** quits minishell and **echo** outputs text. **~** expansion expands to home directory, which is the same as **$HOME** expansion. **$** is used to grab environment variables.
+This minishell also includes in-builts, like **cd**, **exit**, **echo**. If child process is ran, it can be killed by sending SIGNIT signal by pressing ctrl+c. It also includes **~** and **$** expansions. By writing **cd**, minishell changes directory to home directory and **cd -** changes present directory to previous present directory. **exit** quits minishell and **echo** outputs text. **~** expansion expands to home directory, which is the same as **$HOME** expansion. **$** is used to grab environment variables. More examples can be seen in the following example.
 
 ![alt text](https://i.imgur.com/NFcUtNm.png)
