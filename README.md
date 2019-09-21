@@ -18,22 +18,22 @@ Run **make** in root folder. Then, execute **minishell** binary to launch minish
 ```
 
 ## Functionality
-## running binaries
+### running binaries
 minishell is able to run binaries, like ls, by using fork and execve system calls.
 
 ![alt text](https://i.imgur.com/c2JiXol.png)
 
-## managing environment of shell
+### managing environment of shell
 Furthermore, environment metadata is managed via **setenv VAR VALUE** and environment variables can be removed via **unsetenv VAR**. To view environment write **env**. Environment variables store additional data about the minishell and are inherited from parent process, which is the shell you will use to run minishell.
 
 ![alt text](https://i.imgur.com/68JtxhI.png)
 
-## built in functions
+### built in functions
 This minishell also includes in-builts, like **cd**, **exit**, **echo**. If child process is ran, it can be killed by sending SIGNIT signal by pressing ctrl+c. By writing **cd**, minishell changes directory to home directory and **cd -** changes present directory to previous present directory. **exit** quits minishell and **echo** outputs text. 
 
 ![alt text](https://i.imgur.com/zpFfrzI.png)
 
-## expansions
+### expansions
 Minishell also includes **~** and **$** expansions.
 **~** expansion expands to home directory, which is the same as **$HOME** expansion.
 **$** is used to grab environment variables. More examples can be seen in the following example.
